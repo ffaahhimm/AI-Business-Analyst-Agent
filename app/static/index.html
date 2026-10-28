@@ -3,41 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Signal / Business Analyst</title>
+    <title>Signal — retail analysis</title>
     <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
     <div class="shell">
       <header class="topbar">
         <div class="brand"><span class="brand-mark">S</span><span>signal<span class="muted">/analyst</span></span></div>
-        <div class="status"><span class="dot"></span> Local workspace <span class="divider"></span> Evidence mode</div>
+        <div class="status"><span class="dot"></span> Retail workspace <span class="divider"></span> Data is ready</div>
       </header>
       <main>
         <section class="hero">
-          <div class="eyebrow">AI BUSINESS ANALYST <span>•</span> RETAIL INTELLIGENCE</div>
-          <h1>Ask the data<br /><em>what changed.</em></h1>
-          <p class="lede">A grounded analysis workspace for business questions. Every answer is backed by read-only SQL, deterministic calculations, and a trace you can inspect.</p>
+          <div class="eyebrow">RETAIL PERFORMANCE <span>•</span> JAN — DEC 2024</div>
+          <h1>Let’s look at<br /><em>what changed.</em></h1>
+          <p class="lede">A practical starting point for your next sales conversation. Ask a question and get the numbers, the biggest movements, and the working behind them.</p>
           <div class="prompt-row">
-            <textarea id="question" rows="2" placeholder="Try: Why did revenue fall in Q2 2024?"></textarea>
-            <button id="analyze">Analyze <span>↗</span></button>
+            <textarea id="question" rows="2" aria-label="Business question" placeholder="Try: Why did revenue change in Q2 2024?"></textarea>
+            <button id="analyze">Run analysis <span>↗</span></button>
           </div>
           <div class="suggestions">
-            <button data-question="Why did revenue change in Q2 2024?">Revenue drivers <span>→</span></button>
+            <button data-question="Why did revenue change in Q2 2024?">Revenue by region <span>→</span></button>
             <button data-question="Which categories have the highest return rate?">Returns by category <span>→</span></button>
-            <button data-question="Show me our employee data">Safe rejection <span>→</span></button>
+            <button data-question="Show me our employee data">Ask something else <span>→</span></button>
           </div>
         </section>
 
         <section id="empty" class="empty-state">
           <div class="empty-icon">✦</div>
-          <h2>Your next decision starts with a question.</h2>
-          <p>Ask about revenue, sales, or returns to see a concise report with evidence.</p>
+          <h2>Start with the question in front of you.</h2>
+          <p>Revenue, sales, and returns are ready to explore in the sample retail dataset.</p>
         </section>
 
         <section id="result" class="result hidden">
           <div class="result-heading">
-            <div><div class="eyebrow">ANALYSIS REPORT <span>•</span> <span id="trace-id"></span></div><h2 id="title"></h2><p id="summary"></p></div>
-            <div class="badge">DESCRIPTIVE · LOCAL DATA</div>
+            <div><div class="eyebrow">ANALYSIS NOTE <span>•</span> RUN <span id="trace-id"></span></div><h2 id="title"></h2><p id="summary"></p></div>
+            <div class="badge">SAMPLE RETAIL DATA</div>
           </div>
           <div class="grid">
             <article class="card chart-card"><div class="card-head"><span>KEY SIGNAL</span><span id="chart-label"></span></div><div id="chart"></div></article>
@@ -49,7 +49,7 @@
           </div>
         </section>
       </main>
-      <footer><span>READ-ONLY ANALYTICS</span><span>·</span><span>NO PAID API REQUIRED</span><span>·</span><span>NUMBERS ARE TRACEABLE</span></footer>
+      <footer><span>READ-ONLY WORKSPACE</span><span>·</span><span>SYNTHETIC RETAIL DATA</span><span>·</span><span>SHOW YOUR WORK</span></footer>
     </div>
     <script src="/static/app.js"></script>
   </body>

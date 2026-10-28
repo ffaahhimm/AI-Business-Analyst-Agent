@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import re
-from time import perf_counter
 from uuid import uuid4
 
 from app.analysis import revenue_summary, return_summary
@@ -38,7 +37,6 @@ def _evidence(result: QueryResult) -> Evidence:
 
 
 def analyze(question: str) -> AnalysisResponse:
-    started = perf_counter()
     trace_id = str(uuid4())
     trace: list[TraceStep] = [
         TraceStep(name="classify_question", status="completed", detail="Matched the question to a supported deterministic analysis.")

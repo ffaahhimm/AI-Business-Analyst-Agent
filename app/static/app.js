@@ -45,5 +45,5 @@ analyzeButton.addEventListener("click", async () => {
     renderChart(data.chart); result.scrollIntoView({behavior:"smooth", block:"start"});
   } catch (error) {
     empty.classList.remove("hidden"); result.classList.add("hidden"); empty.querySelector("h2").textContent = "Analysis could not be completed."; empty.querySelector("p").textContent = error.message;
-  } finally { analyzeButton.disabled = false; analyzeButton.innerHTML = 'Analyze <span>↗</span>'; }
+  } finally { analyzeButton.disabled = false; analyzeButton.innerHTML = 'Run analysis <span>↗</span>'; }
 });
