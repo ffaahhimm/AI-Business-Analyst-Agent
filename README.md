@@ -137,7 +137,7 @@ This repository is designed to be public:
 
 ### Environment files
 
-Do **not** create or commit a real `.env` file containing secrets. `.gitignore` excludes `.env`, while `.env.example` contains only a harmless local database-path example. If you later add credentials, keep them only in your local `.env`.
+No environment file is included in this public repository. The MVP does not require credentials, API keys, or a `.env` file. Keep any future local secrets outside the repository and never commit them.
 
 ## MCP adapter
 
@@ -182,7 +182,7 @@ git diff --check
 
 Expected behavior:
 
-- `.env` is ignored
+- no `.env` file is present
 - `data/retail.db` is ignored
 - no secret values are committed
 - README images are stored in `docs/screenshots/`
